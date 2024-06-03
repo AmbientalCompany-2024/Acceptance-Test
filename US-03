@@ -1,0 +1,18 @@
+Feature: US03: Noticias del medio ambiente
+
+Como usuario de la aplicación, necesito conocer noticias sobre el medio ambiente y los problemas más concurrentes para poder mantenerme informado
+
+
+Scenario: Acceso a noticias del dia
+
+Dado que el usuario ingresa con su cuenta al sitio web WideGreen Y desee conocer sobre noticias del medio ambiente.
+Cuando ingrese al apartado de publicaciones del sitio web, 
+Entonces podrá conocer lo último en noticias sobre el medio ambiente.
+
+
+Scenario: Filtro de noticias
+
+Dado que el usuario ingresa con su cuenta al sitio web WideGreen Y este en el apartado de publicaciones.
+Cuando quiera seleccionar publicaciones en un intervalo especifico Y de un determinado tema,
+Entonces el usuario usara el filtro de tiempo Y de tema para conocer lo que desee en específico.
+
