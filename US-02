@@ -1,1 +1,25 @@
+Feature US02: Inicio de Sesion
+Como usuario de la aplicacion, tengo que ingresar mi usuario y contraseña para ingresar a mi perfil de una manera mas instantanea
+
+
+Scenario: Iniciar sesion en la plataforma
+
+Dado que el usuario se encuentra en el sitio web 'WideGreen' Y encuentre la opción superior de 'Iniciar Sesión',
+Cuando el usuario le de clic al botón de 'iniciar sesión'
+Entonces el sitio mostrará una página que muestre el usuario y contraseña a ingresar
+
+
+Scenario: Inicio de sesion automatico
+
+Dado que el usuario se encuentra en el sitio web WideGreen Y ya inició sesión en anteriores ocasiones.
+Cuando el sitio le pregunta si desea guardar sus datos para cargarlos cada vez que ingrese de manera automática.
+Entonces el sitio web cargará automáticamente los datos del usuario Y así iniciar sesión de manera instantánea.
+
+
+Scenario: Inicio de sesion erroneo
+
+Dado que el usuario se encuentra en el sitio web “WideGreen” Y ya inició sesión en anteriores ocasiones.
+Cuando el usuario haya cambiado su usuario o contraseña,
+Entonces el sitio web que tenía sus datos anteriores guardados no lo reconocerá en primera instancia hasta que cargue sus nuevos datos.
+
 
