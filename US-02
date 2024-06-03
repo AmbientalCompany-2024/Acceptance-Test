@@ -1,7 +1,7 @@
 Feature US02: Inicio de Sesion
 Como usuario de la aplicacion, tengo que ingresar mi usuario y contraseña para ingresar a mi perfil de una manera mas instantanea
 
-
+ 
 Scenario: Iniciar sesion en la plataforma
 
 Dado que el usuario se encuentra en el sitio web 'WideGreen' Y encuentre la opción superior de 'Iniciar Sesión',
