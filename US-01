@@ -1,1 +1,42 @@
+Feature: US01: Creacion de perfil
+Como usuario de la aplicacion, necesito registrar mis datos personales para tener una identificacion en la pagina
+
+Scenario: Ingresar a la plataforma
+
+Dado que la persona encuentra en el sitio web WideGreen, esta le solicitará ingresar con un usuario.
+Cuando la persona haya ingresado los datos necesarios (Nombre, contraseña, carrera, iniciativa involucrada) Y le dé clic a registrarse
+Entonces la plataforma le mostrará un cuadro de texto mencionando “Usuario registrado”, y procederá a acceder a la página principal.
+
+
+Scenario: Visualizar los datos del usuario nuevo
+
+Dado que la persona ya registró previamente sus datos de usuario Y le dio clic a registrarse
+Cuando la persona visualice el texto de Usuario registrado
+Entonces, inmediatamente después, la página mostrará de nuevo los datos que el usuario ingresó con un texto superior que dice '¿Estos son los datos que ingresaste?'.
+
+
+
+Scenario: Comprobar los datos del nuevo usuario
+
+Dado que el usuario visualizó los datos que ingresó Y considera que todos están en orden como dicho lo estipuló,
+Cuando el usuario le dé clic al botón inferior derecho que dice Sí, son mis datos correctos 
+Entonces la página mostrará un texto que dice Bienvenido a WideGreen
+
+
+
+Scenario: Cambiar los datos del usuario
+
+Dado que el usuario visualizo los datos que ingreso Y considera que hay datos que no son correctos para el,
+Cuando el usuario le de clic al boton izquierdo que dice Realizar cambios
+Entonces el sitio mostrara de nuevo la pagina de ingreso de nuevo usuario
+
+
+
+Scenario: Salir de la creacion de perfil
+
+Dado que el usuario no desee crear un nuevo perfil o haya seleccionado esta seccion por error,
+Cuando el usuario elija la opcion superior que diga Salir de la creacion de perfil,
+Entonces el sitio mostrara la pagina que tenia anterior a la de creacion de perfil
+
+
 
