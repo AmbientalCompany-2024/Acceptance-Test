@@ -2,7 +2,7 @@ Feature: US01: Creacion de perfil
 Como usuario de la aplicacion, necesito registrar mis datos personales para tener una identificacion en la pagina
 
 Scenario: Ingresar a la plataforma
-
+ 
 Dado que la persona encuentra en el sitio web WideGreen, esta le solicitará ingresar con un usuario.
 Cuando la persona haya ingresado los datos necesarios (Nombre, contraseña, carrera, iniciativa involucrada) Y le dé clic a registrarse
 Entonces la plataforma le mostrará un cuadro de texto mencionando “Usuario registrado”, y procederá a acceder a la página principal.
