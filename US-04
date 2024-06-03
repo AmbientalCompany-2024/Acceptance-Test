@@ -1,0 +1,25 @@
+Feature: US04: Inscripcion a campañas activas
+
+Como usuario de la aplicación, deseo participar en proyectos sobre el medio ambiente que estén activos para poder contribuir con el cuidado del mismo trabajando en comunidad
+
+Scenario: Registro a un proyecto ambiental
+
+Dado que el usuario se encuentra en el sitio web WideGreen con su cuenta Y vea la publicación de un nuevo proyecto ambiental
+Cuando seleccione la opcion de Participar en evento
+Entonces la plataforma marcará su participación Y también borrará de su agenda personal dicha participación
+
+
+Scenario: Registro erroneo al proyecto medio ambiental
+
+Dado que el usuario haya confirmado su participación a un evento
+Cuando el usuario le de clic al mismo boton de participar en evento de nuevo
+Entonces la plataforma desmarcará su participación Y también borrará dicha participación de su agenda
+
+
+Scenario: Listado de proyectos ambientales registrados
+
+Dado que el usuario se encuentre en su perfil
+Cuando el usuario seleccione la opción Agenda de proyectos
+Entonces el sitio mostrará un libro virtual de todos los proyectos ambientales en los que el usuario decidio registrarse
+
+
